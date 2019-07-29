@@ -1,0 +1,32 @@
+﻿all:"CLEAR"
+
+initial_settings:{"hymen":1, "timepos":0, "herorgasms":0, "herneworgasms":0, "herpleasure":0, "herpleasuremax":1, "hilts":0, "hisprecums":0, "dialogtime":100}
+
+loadhairdown:"[SETVAR_da.hair.load_hairdown.png]"
+
+-start:"[AUTO_OFF][SETVAR_starttime_*dt_time*][test2]"
+test2:"[SHOW_PENIS][SHOW_BALLS][OPEN_MOUTH][GROW_HIS_PENIS_BY_50]testing![pronetest]"
+pronetest:"load position and charcode[pronetest2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_09_boneprone]"{"style":"Thought", "set":{"da.charcode.load":"XcustomHair:Mods/zelda botw/hairdown.png;top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+pronetest2:"load dialog"{"style":"Thought", "set":{"da.dialogue.load":"09_boneprone.txt"}}
+
+-start:"[AUTO_OFF][SETVAR_starttime_*dt_time*][test]"
+test:"[SHOW_PENIS][SHOW_BALLS][OPEN_MOUTH][GROW_HIS_PENIS_BY_20]testing![nexttest]"
+nexttest:"load position and charcode[nexttest2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_05_missionary]"{"style":"Thought", "set":{"da.charcode.load":"XcustomHair:Mods/zelda botw/hairdown.png;top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+nexttest2:"load dialog"{"style":"Thought", "set":{"da.dialogue.load":"05_missionary.txt"}}
+-nexttest2:"load base_sex"{"style":"Thought", "set":{"da.dialogue.load":"base_sex.txt", "dialognext":"05_missionary.txt"}}
+
+start:"[CLEAN_ALL][AUTO_OFF][SETVAR_starttime_*dt_time*]ББББББББББББББББББББББББ[OPEN_MOUTH]Wait, *YOU*! Don't look, I'm all wet![CLOSE_MOUTH][helpme]ББББББББББББ"
+helpme:"*ME, *you've got to help me![s2]ББББББББББББ"{"style":"Him"}
+s2:"[OPEN_MOUTH][WORRIED_MOOD][LOOK_UP]What's wrong*, YOU*?[s3]ББББББББББББ[CLOSE_MOUTH]"
+s3:"I've had a curse put on me[s4]ББББББББББББ"{"style":"Him"}
+s4:"it's getting in the way of my adventuring![s5]ББББББББББББ"{"style":"Him"}
+s5:"[OPEN_MOUTH][WORRIED_MOOD]Oh no, what kind of curse?[s6]ББББББББББББ[CLOSE_MOUTH]"
+s6:"Well... It's a curse that makes my dick huge[HAPPY_MOOD][OPEN_MOUTH][SHOCK][s7]ББББББББББББ"{"style":"Him"}
+s7:"I can barely fight with this thing in the way.[CLOSE_MOUTH][LOOK_DOWN][s8]ББББББББББББ"{"style":"Him"}
+s8:"[OPEN_MOUTH][HAPPY_MOOD]OH! Hmm...[s9]ББББББББББББ[CLOSE_MOUTH]"
+s9:"[LOOK_UP](Is he just horny, or is this a real curse?)[s10]ББББББББББББ"{"style":"Thought"}
+s10:"[AGGRESSIVE_MOOD](Well I've finally got my chance with him!)[s11]ББББББББББББ"{"style":"Thought"}
+s11:"[LOOK_DOWN](Hopefully it's as huge as he says...)[next]ББББББББББББ"{"style":"Thought"}
+
+next:"[ANIMTOOLS_zelda_slash5C_02_goingdown][next2]"{"style":"Thought"}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"02_goingdown.txt"}}

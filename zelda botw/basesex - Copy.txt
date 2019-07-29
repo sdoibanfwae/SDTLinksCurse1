@@ -1,0 +1,290 @@
+﻿-I can divide totalherpleasure by time to determine pace?
+-should depth be measured in absolute size or relative to the penis size? I probably just need to detect absolute depth but also detect if hilted? also a flag for new deepest?
+-how many levels of depth do I need? out, shallow, deep, hilt?
+-should soft_gonnacum have deepest or longstroke flags? probably not, because then she would be cumming hard
+-should I change vigour calculation to use dt_vigour_max5 or dt_vigour_avg3? probably
+-should I change vigour to be > 20 + > 50 to ease it back? I don't think so, since it's an avg instead of an immediate value
+-need to add herpleasure, arm movements, breath...could I do this in the controller lines or in the view lines?
+-atv_curresist
+-[CLEARLINES_<linetype>] trigger. This trigger clears all lines of the specified linetype.
+-initial_settings:{"timepos":0, "herneworgasms":0, "herpleasure":0, "orgasmclose":0.8}
+-_endstreak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg15 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg15 > ( dt_vigour_avg60 x 0.8 ) ) ) *]
+-_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *
+
+all:"CLEAR"
+
+general:"[SETVAR_herprecum_0][SETVAR_linetype_general][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+vigorous:"[SETVAR_herprecum_0][SETVAR_linetype_vigorous][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+inbody:"[SETVAR_herprecum_0][SETVAR_linetype_inbody][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+bodycontact:"[SETVAR_herprecum_0][SETVAR_linetype_bodycontact][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+bodycontactresistive:"[SETVAR_herprecum_0][SETVAR_linetype_bodycontactresistive][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+bodyentered:"[SETVAR_herprecum_0][SETVAR_linetype_bodyentered][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+bodyexited:"[SETVAR_herprecum_0][SETVAR_linetype_bodyexited][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+vigorousbodyexited:"[SETVAR_herprecum_0][SETVAR_linetype_vigorousbodyexited][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+vigorousbodyexitedrelax:"[SETVAR_herprecum_0][SETVAR_linetype_vigorousbodyexitedrelax][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+bodycontactspaceheldpush:"[SETVAR_herprecum_0][SETVAR_linetype_bodycontactspaceheldpush][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+cuminher:"[SETVAR_herprecum_0]cuminher"{"style":"Thought"}
+bodycontacthilt:"[SETVAR_herprecum_0][SETVAR_linetype_bodycontacthilt][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+bodycontactspaceheldpushinhilt:"[SETVAR_herprecum_0][SETVAR_linetype_bodycontractspaceheldpushinhilt][process_hymen*hymen*_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_vigour* dt_vigour_avg3 \ 0.34 *_maxdepth* ( dt_depth_max5 > 0 ) + ( dt_depth_max5 > deep ) *_hilt* dt_depth_max5 >= ( dt_penislength x 0.99 ) *_INSTANT][SETVAR_lastdialog_* dt_time + dialogtime *]"{"style":"Thought", "check":{"dt_time":">lastdialog"}}
+
+-process_hymen0_herpleasure0_vigour0_maxdepth0_hilt0_INSTANT:"[SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+
+pre_cum:"[SETVAR_herprecum_0][precum_timer* lastprecum + 10 > dt_time *_herpleasure* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_himstruggling* ( hisprecums > 0 ) + ( hisprecums > 2 ) *][SETVAR_lastprecum_*dt_time*]"{"style":"Thought"}
+precum_timer1_herpleasure0_himstruggling0:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+precum_timer1_herpleasure0_himstruggling1:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+precum_timer1_herpleasure0_himstruggling2:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+precum_timer1_herpleasure1_himstruggling0:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+precum_timer1_herpleasure1_himstruggling1:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+precum_timer1_herpleasure1_himstruggling2:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+precum_timer1_herpleasure2_himstruggling0:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+precum_timer1_herpleasure2_himstruggling1:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+precum_timer1_herpleasure2_himstruggling2:"[SETVAR_da.pleasurePercentage_0]"{"style":"Thought"}
+-do I want more data for these lines? like herorgasms, vigourstreak...
+precum_timer0_herpleasure0_himstruggling0:"Don't cum yet, or else it'll get even bigger![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+precum_timer0_herpleasure0_himstruggling1:"*YOU, *you must hold on![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+precum_timer0_herpleasure0_himstruggling2:"Come on*, YOU*, snap out of it![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+
+precum_timer0_herpleasure1_himstruggling0:"Don't cum yet, I'm close![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+precum_timer0_herpleasure1_himstruggling1:"*YOU, *you must hold on a little longer![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+precum_timer0_herpleasure1_himstruggling2:"Come on*, YOU*, I'm close, you can do this![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+
+precum_timer0_herpleasure2_himstruggling0:"DON'T STOP! I'M GONNA CUM![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+precum_timer0_herpleasure2_himstruggling1:"*YOU, *KEEP GOING FOR ME![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+precum_timer0_herpleasure2_himstruggling2:"FUCK ME! I'M GONNA CUM![SETVAR_da.pleasurePercentage_0][SETVAR_hisprecums_* hisprecums + 1 *]"
+
+
+----hymen lines, depth 0, should be out of body
+process_hymen1_herpleasure0_vigour0_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour0_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour0_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+process_hymen1_herpleasure0_vigour1_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour1_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour1_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+process_hymen1_herpleasure0_vigour2_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour2_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour2_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][nervous]"{"style":"Thought"}
+
+----hymen lines, shallow depth
+process_hymen1_herpleasure0_vigour0_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour0_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour0_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure0_vigour1_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour1_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour1_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure0_vigour2_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour2_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour2_maxdepth1_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+
+----hymen lines, deep
+process_hymen1_herpleasure0_vigour0_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour0_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour0_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure0_vigour1_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour1_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour1_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure0_vigour2_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour2_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour2_maxdepth2_hilt0_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+
+----hymen lines, hilted, destroyed hymen!
+process_hymen1_herpleasure0_vigour0_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour0_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour0_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure0_vigour1_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour1_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour1_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure0_vigour2_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure1_vigour2_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen1_herpleasure2_vigour2_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][popcherry_hard][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+
+----no hymen lines, depth 0, out of body
+process_hymen0_herpleasure0_vigour0_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][waiting_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour0_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][pleasefuckme_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour0_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][pleasefuckme_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+process_hymen0_herpleasure0_vigour1_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][waiting_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour1_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][pleasefuckme_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour1_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][pleasefuckme_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+process_hymen0_herpleasure0_vigour2_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][waiting_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour2_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][pleasefuckme_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour2_maxdepth0_hilt0_INSTANT:"[*leftarm*][*rightarm*][pleasefuckme_endstreak* ( dt_vigour_avg60 > 0.5 ) + ( dt_vigour_avg60 > 0.8 ) *]"{"style":"Thought"}
+
+----no hymen lines, shallow
+process_hymen0_herpleasure0_vigour0_maxdepth1_hilt0_INSTANT:"[*leftarm*][*rightarm*][shallow][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought", "set":{"herpleasure":"+1"}}
+process_hymen0_herpleasure1_vigour0_maxdepth1_hilt0_INSTANT:"[*leftarm*][*rightarm*][soft_gonnacum][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour0_maxdepth1_hilt0_INSTANT:"[*leftarm*][*rightarm*][soft_gonnacum][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure0_vigour1_maxdepth1_hilt0_INSTANT:"[*leftarm*][*rightarm*][shallow][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour1_maxdepth1_hilt0_INSTANT:"[*leftarm*][*rightarm*][soft_gonnacum][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour1_maxdepth1_hilt0_INSTANT:"[*leftarm*][*rightarm*][soft_cum][herprecum_*herprecum*][SETVAR_herprecum_1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure0_vigour2_maxdepth1_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][shallow_hard_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour2_maxdepth1_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][hard_gonnacum_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *_deepest0_longstroke0_hilt0][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour2_maxdepth1_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][hard_cum_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *_deepest0_longstroke0_hilt0][herprecum_*herprecum*][SETVAR_herprecum_1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+
+----no hymen lines, deep, check for long strokes? check for new deepest?
+process_hymen0_herpleasure0_vigour0_maxdepth2_hilt0_INSTANT:"[*leftarm*][*rightarm*][deep_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour0_maxdepth2_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][deep_gonnacum_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour0_maxdepth2_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][deep_cum_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][herprecum_*herprecum*][SETVAR_herprecum_1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure0_vigour1_maxdepth2_hilt0_INSTANT:"[*leftarm*][*rightarm*][deep_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour1_maxdepth2_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][deep_gonnacum_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour1_maxdepth2_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][deep_cum_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][herprecum_*herprecum*][SETVAR_herprecum_1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure0_vigour2_maxdepth2_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][deep_hard_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour2_maxdepth2_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][hard_gonnacum_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour2_maxdepth2_hilt0_INSTANT:"[*leftarmoverwhelmed*][*rightarmoverwhelmed*][hard_cum_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt0][herprecum_*herprecum*][SETVAR_herprecum_1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+
+----no hymen lines, hilted, check for long strokes or rubbing deep
+process_hymen0_herpleasure0_vigour0_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][deep_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour0_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][deep_gonnacum_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour0_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][deep_cum_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][herprecum_*herprecum*][SETVAR_herprecum_1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure0_vigour1_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][deep_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour1_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][deep_gonnacum_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour1_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][deep_cum_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][herprecum_*herprecum*][SETVAR_herprecum_1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure0_vigour2_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][deep_hard_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure1_vigour2_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][hard_gonnacum_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+process_hymen0_herpleasure2_vigour2_maxdepth2_hilt1_INSTANT:"[*hiltleftarm*][*hiltrightarm*][hard_cum_streak* ( ( dt_vigour_avg60 > 0.5 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) + ( ( dt_vigour_avg60 > 0.8 ) && ( dt_vigour_avg5 > ( dt_vigour_avg60 x 0.8 ) ) ) *_deepest* dt_depth_max5 > olddeepest *_longstroke* ( dt_depth_min5 < deep ) && ( dt_depth_avg15 > deep ) *_hilt1][herprecum_*herprecum*][SETVAR_herprecum_1][SETVAR_olddeepest_* ( dt_depth_max5 x ( ( dt_depth_maxtime5 > starttime ) && ( dt_depth_max5 > olddeepest ) ) ) + ( olddeepest x ( ( dt_depth_maxtime5 <= starttime ) || ( dt_depth_max5 <= olddeepest ) ) ) *]"{"style":"Thought"}
+
+----dialog lines
+nervous:"[WORRIED_MOOD](Will I be able to handle *YOU*'s huge cock?)"{"style":"Thought"}
+popcherry:"[SETVAR_hymen_0]OW! Start slow please[HAPPY_MOOD]"
+popcherry_hard:"[SETVAR_hymen_0][ANGRY_MOOD]OW! Damn *, YOU*! Don't start so rough!"
+
+waiting_endstreak0:"Taking a break already?"
+waiting_endstreak1:"Wow that was quite the fucking, I need a break too!"
+waiting_endstreak2:"Holy shit what a pounding that was! That was so intense!"
+
+shallow:"shallow"
+
+deep_deepest0_longstroke0_hilt0:"deep_deepest0_longstroke0_hilt0"
+deep_deepest0_longstroke1_hilt0:"deep_deepest0_longstroke1_hilt0"
+deep_deepest0_longstroke0_hilt1:"deep_deepest0_longstroke0_hilt1"
+deep_deepest0_longstroke1_hilt1:"deep_deepest0_longstroke1_hilt1"
+
+deep_deepest1_longstroke0_hilt0:"deep_deepest1_longstroke0_hilt0"
+deep_deepest1_longstroke1_hilt0:"deep_deepest1_longstroke1_hilt0"
+deep_deepest1_longstroke0_hilt1:"deep_deepest1_longstroke0_hilt1"
+deep_deepest1_longstroke1_hilt1:"deep_deepest1_longstroke1_hilt1"
+
+----vigorous lines
+shallow_hard_streak0:"shallow hard, no streak"
+shallow_hard_streak1:"shallow hard, streak level 1!"
+shallow_hard_streak2:"shallow hard, streak level 2!!!"
+
+deep_hard_streak0_deepest0_longstroke0_hilt0:"deep_hard_streak0_deepest0_longstroke0_hilt0"
+deep_hard_streak0_deepest0_longstroke1_hilt0:"deep_hard_streak0_deepest0_longstroke1_hilt0"
+deep_hard_streak0_deepest1_longstroke0_hilt0:"deep_hard_streak0_deepest1_longstroke0_hilt0"
+deep_hard_streak0_deepest1_longstroke1_hilt0:"deep_hard_streak0_deepest1_longstroke1_hilt0"
+
+deep_hard_streak0_deepest0_longstroke0_hilt1:"deep_hard_streak0_deepest0_longstroke0_hilt1"
+deep_hard_streak0_deepest0_longstroke1_hilt1:"deep_hard_streak0_deepest0_longstroke1_hilt1"
+deep_hard_streak0_deepest1_longstroke0_hilt1:"deep_hard_streak0_deepest1_longstroke0_hilt1"
+deep_hard_streak0_deepest1_longstroke1_hilt1:"deep_hard_streak0_deepest1_longstroke1_hilt1"
+
+deep_hard_streak1_deepest0_longstroke0_hilt0:"deep_hard_streak1_deepest0_longstroke0_hilt0"
+deep_hard_streak1_deepest0_longstroke1_hilt0:"deep_hard_streak1_deepest0_longstroke1_hilt0"
+deep_hard_streak1_deepest1_longstroke0_hilt0:"deep_hard_streak1_deepest1_longstroke0_hilt0"
+deep_hard_streak1_deepest1_longstroke1_hilt0:"deep_hard_streak1_deepest1_longstroke1_hilt0"
+
+deep_hard_streak1_deepest0_longstroke0_hilt1:"deep_hard_streak1_deepest0_longstroke0_hilt1"
+deep_hard_streak1_deepest0_longstroke1_hilt1:"deep_hard_streak1_deepest0_longstroke1_hilt1"
+deep_hard_streak1_deepest1_longstroke0_hilt1:"deep_hard_streak1_deepest1_longstroke0_hilt1"
+deep_hard_streak1_deepest1_longstroke1_hilt1:"deep_hard_streak1_deepest1_longstroke1_hilt1"
+
+deep_hard_streak2_deepest0_longstroke0_hilt0:"deep_hard_streak2_deepest0_longstroke0_hilt0"
+deep_hard_streak2_deepest0_longstroke1_hilt0:"deep_hard_streak2_deepest0_longstroke1_hilt0"
+deep_hard_streak2_deepest1_longstroke0_hilt0:"deep_hard_streak2_deepest1_longstroke0_hilt0"
+deep_hard_streak2_deepest1_longstroke1_hilt0:"deep_hard_streak2_deepest1_longstroke1_hilt0"
+
+deep_hard_streak2_deepest0_longstroke0_hilt1:"deep_hard_streak2_deepest0_longstroke0_hilt1"
+deep_hard_streak2_deepest0_longstroke1_hilt1:"deep_hard_streak2_deepest0_longstroke1_hilt1"
+deep_hard_streak2_deepest1_longstroke0_hilt1:"deep_hard_streak2_deepest1_longstroke0_hilt1"
+deep_hard_streak2_deepest1_longstroke1_hilt1:"deep_hard_streak2_deepest1_longstroke1_hilt1"
+
+
+----gonnacum lines
+pleasefuckme_endstreak0:"Please put it back in, I'm so close!"
+pleasefuckme_endstreak1:"Wait, no, I'm so close! Pound me just a little more!"
+pleasefuckme_endstreak2:"OH GOD! POUND ME MORE! I'M GONNA CUM SO HARD!"
+soft_gonnacum:"I'm gonna cum! Give it to me*, YOU*!"
+
+hard_gonnacum_streak0_deepest0_longstroke0_hilt0:"hard_gonnacum_streak0_deepest0_longstroke0_hilt0"
+hard_gonnacum_streak0_deepest0_longstroke1_hilt0:"hard_gonnacum_streak0_deepest0_longstroke1_hilt0"
+hard_gonnacum_streak0_deepest1_longstroke0_hilt0:"hard_gonnacum_streak0_deepest1_longstroke0_hilt0"
+hard_gonnacum_streak0_deepest1_longstroke1_hilt0:"hard_gonnacum_streak0_deepest1_longstroke1_hilt0"
+
+hard_gonnacum_streak0_deepest0_longstroke0_hilt1:"hard_gonnacum_streak0_deepest0_longstroke0_hilt1"
+hard_gonnacum_streak0_deepest0_longstroke1_hilt1:"hard_gonnacum_streak0_deepest0_longstroke1_hilt1"
+hard_gonnacum_streak0_deepest1_longstroke0_hilt1:"hard_gonnacum_streak0_deepest1_longstroke0_hilt1"
+hard_gonnacum_streak0_deepest1_longstroke1_hilt1:"hard_gonnacum_streak0_deepest1_longstroke1_hilt1"
+
+hard_gonnacum_streak1_deepest0_longstroke0_hilt0:"hard_gonnacum_streak1_deepest0_longstroke0_hilt0"
+hard_gonnacum_streak1_deepest0_longstroke1_hilt0:"hard_gonnacum_streak1_deepest0_longstroke1_hilt0"
+hard_gonnacum_streak1_deepest1_longstroke0_hilt0:"hard_gonnacum_streak1_deepest1_longstroke0_hilt0"
+hard_gonnacum_streak1_deepest1_longstroke1_hilt0:"hard_gonnacum_streak1_deepest1_longstroke1_hilt0"
+
+hard_gonnacum_streak1_deepest0_longstroke0_hilt1:"hard_gonnacum_streak1_deepest0_longstroke0_hilt1"
+hard_gonnacum_streak1_deepest0_longstroke1_hilt1:"hard_gonnacum_streak1_deepest0_longstroke1_hilt1"
+hard_gonnacum_streak1_deepest1_longstroke0_hilt1:"hard_gonnacum_streak1_deepest1_longstroke0_hilt1"
+hard_gonnacum_streak1_deepest1_longstroke1_hilt1:"hard_gonnacum_streak1_deepest1_longstroke1_hilt1"
+
+hard_gonnacum_streak2_deepest0_longstroke0_hilt0:"hard_gonnacum_streak2_deepest0_longstroke0_hilt0"
+hard_gonnacum_streak2_deepest0_longstroke1_hilt0:"hard_gonnacum_streak2_deepest0_longstroke1_hilt0"
+hard_gonnacum_streak2_deepest1_longstroke0_hilt0:"hard_gonnacum_streak2_deepest1_longstroke0_hilt0"
+hard_gonnacum_streak2_deepest1_longstroke1_hilt0:"hard_gonnacum_streak2_deepest1_longstroke1_hilt0"
+
+hard_gonnacum_streak2_deepest0_longstroke0_hilt1:"hard_gonnacum_streak2_deepest0_longstroke0_hilt1"
+hard_gonnacum_streak2_deepest0_longstroke1_hilt1:"hard_gonnacum_streak2_deepest0_longstroke1_hilt1"
+hard_gonnacum_streak2_deepest1_longstroke0_hilt1:"hard_gonnacum_streak2_deepest1_longstroke0_hilt1"
+hard_gonnacum_streak2_deepest1_longstroke1_hilt1:"hard_gonnacum_streak2_deepest1_longstroke1_hilt1"
+
+deep_gonnacum_deepest0_longstroke0_hilt0:"deep_gonnacum_deepest0_longstroke0_hilt0"
+deep_gonnacum_deepest0_longstroke1_hilt0:"deep_gonnacum_deepest0_longstroke1_hilt0"
+deep_gonnacum_deepest1_longstroke0_hilt0:"deep_gonnacum_deepest1_longstroke0_hilt0"
+deep_gonnacum_deepest1_longstroke1_hilt0:"deep_gonnacum_deepest1_longstroke1_hilt0"
+
+deep_gonnacum_deepest0_longstroke0_hilt1:"deep_gonnacum_deepest0_longstroke0_hilt1"
+deep_gonnacum_deepest0_longstroke1_hilt1:"deep_gonnacum_deepest0_longstroke1_hilt1"
+deep_gonnacum_deepest1_longstroke0_hilt1:"deep_gonnacum_deepest0_longstroke0_hilt1"
+deep_gonnacum_deepest1_longstroke1_hilt1:"deep_gonnacum_deepest0_longstroke1_hilt1"
+
+----cumming lines
+soft_cum:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]I'm cumming softly[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+hard_cum_streak0_deepest0_longstroke0_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak0_deepest0_longstroke0_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak0_deepest0_longstroke1_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak0_deepest0_longstroke1_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak0_deepest1_longstroke0_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak0_deepest1_longstroke0_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak0_deepest1_longstroke1_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak0_deepest1_longstroke1_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+hard_cum_streak0_deepest0_longstroke0_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak0_deepest0_longstroke0_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak0_deepest0_longstroke1_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak0_deepest0_longstroke1_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak0_deepest1_longstroke0_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak0_deepest1_longstroke0_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak0_deepest1_longstroke1_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak0_deepest1_longstroke1_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+hard_cum_streak1_deepest0_longstroke0_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak1_deepest0_longstroke0_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak1_deepest0_longstroke1_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak1_deepest0_longstroke1_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak1_deepest1_longstroke0_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak1_deepest1_longstroke0_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak1_deepest1_longstroke1_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak1_deepest1_longstroke1_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+hard_cum_streak1_deepest0_longstroke0_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak1_deepest0_longstroke0_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak1_deepest0_longstroke1_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak1_deepest0_longstroke1_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak1_deepest1_longstroke0_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak1_deepest1_longstroke0_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak1_deepest1_longstroke1_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak1_deepest1_longstroke1_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+hard_cum_streak2_deepest0_longstroke0_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak2_deepest0_longstroke0_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak2_deepest0_longstroke1_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak2_deepest0_longstroke1_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak2_deepest1_longstroke0_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak2_deepest1_longstroke0_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak2_deepest1_longstroke1_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak2_deepest1_longstroke1_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+hard_cum_streak2_deepest0_longstroke0_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak2_deepest0_longstroke0_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak2_deepest0_longstroke1_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak2_deepest0_longstroke1_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak2_deepest1_longstroke0_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak2_deepest1_longstroke0_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hard_cum_streak2_deepest1_longstroke1_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]hard_cum_streak2_deepest1_longstroke1_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+deep_cum_deepest0_longstroke0_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]deep_cum_deepest0_longstroke0_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+deep_cum_deepest0_longstroke1_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]deep_cum_deepest0_longstroke1_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+deep_cum_deepest1_longstroke0_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]deep_cum_deepest1_longstroke0_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+deep_cum_deepest1_longstroke1_hilt0:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]deep_cum_deepest1_longstroke1_hilt0[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+deep_cum_deepest0_longstroke0_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]deep_cum_deepest0_longstroke0_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+deep_cum_deepest0_longstroke1_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]deep_cum_deepest0_longstroke1_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+deep_cum_deepest1_longstroke0_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]deep_cum_deepest0_longstroke0_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+deep_cum_deepest1_longstroke1_hilt1:"[SETVAR_herprecum_0][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]deep_cum_deepest0_longstroke1_hilt1[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+

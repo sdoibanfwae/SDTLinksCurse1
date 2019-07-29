@@ -1,0 +1,16 @@
+﻿all:"CLEAR"
+
+start:"[s1]Wait, *YOU*, what are you doing? Don't cum inside, it's gonna tear me apart when it grows again!ББББББББББББ"
+s1:"[s2][OPEN_MOUTH][EJACULATE]Oh shitББББББББББББ"{"style":"Him"}
+s2:"[s3][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][AHEGAO_MOOD][*voice*_HARD]It's growing again! [*voice*_HARD][WINCE_5000]HOLY FUCK IT'S STRETCHING ME OUT!ББББББББББББ"
+s3:"[s4][*voice*_HARD][WINCE]IT'S SO...ББББББББББББ[*voice*_HARD][WINCE]SOOOO...ББББББББББББ[*voice*_HARD][WINCE]IT'S SO FUCKING BIIIIG!!!ББББББББББББ"
+s4:"[s5][EJACULATE][*voice*_CLIMAX][SHOCK_10000_85]IT'S SO DEEP!ББББББББББББ [SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0]OH GOD!ББББББББББББ OH MY GOD!ББББББББББББ I'M CUUUMMMINNNGGGGGG!!!!!!ББББББББББББ[ANIMTOOLSENABLEHUNNIESOUNDS][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+-s5:"[HAPPY_MOOD]I think we can try some more...ББББББББББББ[nexttest]"
+s5:"[s6]How could I give you so many orgasms and not be cured?? This is outrageous, it's unfair!ББББББББББББ"{"style":"him"}
+s6:"[next][HAPPY_MOOD]That was amazing, but I need rest now. We can try again in the morning...ББББББББББББ"
+
+nexttest:"[nexttest2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_05_missionary]"{"style":"Thought", "set":{"da.charcode.load":"top:none;legwear:none;tops:none;bottoms:none;breasts:52;breastfirmness:Manual,0.01000;hisPenis:1,1.2,1.2;"}}
+nexttest2:""{"style":"Thought", "set":{"da.dialogue.load":"05_missionary.txt"}}
+
+next:"[next2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_11_morning]"{"style":"Thought", "set":{"da.charcode.load":"hisPenis:1,1.2,1.2;"}}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"11_morning.txt"}}

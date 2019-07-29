@@ -1,0 +1,17 @@
+﻿all:"CLEAR"
+
+initial_settings:{"timepos":0, "herneworgasms":0, "herpleasure":0, "herpleasuremax":50, "hiltleftarm":"TAP_HANDS", "hiltrightarm":"NONE", "leftarm":"NONE", "rightarm":"NONE", "leftarmoverwhelmed":"WINCE", "rightarmoverwhelmed":"NONE"}
+
+start:"[SETVAR_da.dialogue.import_sex2.txt][CUM_BLOCK_ON][SHOW_PENIS][SHOW_BALLS][OPEN_MOUTH]Let's see if I can ride this horse!ББББББББББББ[SETVAR_da.hair.load_hair.png]"{"set":{"da.charcode.load":"top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+
+-after_orgasm_0:"after new orgasm 0?ББББББББББББ"{"set":{"herpleasure":0, "herpleasuremax":50}}
+after_orgasm_1:"*Phew* Oh my god. Ok that's 2 down, 1 to go![whatnext]ББББББББББББ"{"set":{"herpleasure":0, "herpleasuremax":50}}
+after_orgasm_2:"[next]after new orgasm 2?ББББББББББББ"{"set":{"herpleasure":0, "herpleasuremax":50}}
+after_orgasm_3:"[next]after new orgasm 3?ББББББББББББ"{"set":{"herpleasure":0, "herpleasuremax":100, "herneworgasms":2}}
+
+whatnext:"[whatnext2]Can I try doing it from behind next?ББББББББББББ"{"style":"him"}
+whatnext2:"[next]Oh yes, I heard that's even more intense!ББББББББББББ"
+
+next:"[next2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_07_doggy]"{"style":"Thought", "set":{"da.charcode.load":"XcustomHair:Mods/zelda botw/hair down.png;top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+-next2:"[next3]"{"style":"Thought", "set":{"da.charcode.load":"top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"07_doggy.txt"}}

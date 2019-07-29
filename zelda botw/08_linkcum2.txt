@@ -1,0 +1,20 @@
+﻿all:"CLEAR"
+
+start:"[CUM_BLOCK_ON][SHOW_PENIS][SHOW_BALLS][OPEN_MOUTH][s2]Fuck, I'm gonna cum! Your pussy's too good!ББББББББББББ"{"style":"Him", "set":{"da.charcode.load":"XcustomHair:Mods/zelda botw/hairdown.png;top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+s2:"[s3]It's ok*, YOU*, I've already had *herorgasms* orgasms!ББББББББББББ You can claim the cure to your curse now!ББББББББББББ"
+s3:"[nut]Please cum on my ass!ББББББББББББ"
+
+general:"[nut]"
+
+nut:"[nut2]Oh fuuuuck[EJACULATE]ББББББББББББ"{"style":"Him"}
+nut2:"[EJACULATE][nut3]Let out every drop that you've been holding back!"
+nut3:"[EJACULATE][nut4](Once that thing grows again, I won't be able to take it anymore...)ББББББББББББ[GROW_HIS_PENIS_BY_15]"{"style":"Thought"}
+nut4:"[EJACULATE][WORRIED_MOOD][nut5]aaahhhh"{"style":"Him"}
+nut5:"[nut6][EJACULATE]Oh no! Why is it growing again?ББББББББББББ"{"style":"Him"}
+nut6:"[EJACULATE][nut7]Maybe it takes time to go back down?ББББББББББББ"
+nut7:"[EJACULATE][nut8][GROW_HIS_PENIS_BY_15](It's still growing?? Now I definitely can't take it!)ББББББББББББ"{"style":"Thought"}
+nut8:"[nut9]Or maybe you just need more orgasmsББББББББББББ"{"style":"Him"}
+nut9:"[next]*YOU, *noББ, it's way too big now!ББББББББББББ"
+
+next:"[next2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_09_boneprone]"{"style":"Thought", "set":{"da.charcode.load":"XcustomHair:Mods/zelda botw/hair down.png;top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"09_boneprone.txt"}}

@@ -1,0 +1,109 @@
+﻿-manually copy-pasted at the end of each file, need to merge initial_settings
+-I can divide totalherpleasure by time to determine pace?
+-atv_curresist
+-[CLEARLINES_<linetype>] trigger. This trigger clears all lines of the specified linetype.
+-initial_settings:{"timepos":0, "herneworgasms":0, "herpleasure":0, "orgasmclose":0.8}
+
+all:"CLEAR"
+-start:"[CLEARLINES_start][SETVARBYNAME_da.dialogue.import_dialognext][start]"{"style":"Thought"}
+
+inbody_0_0_0:"[*voice*_SOFT]Oh yea fuck me slow"{"check":{"time":"<10"}, "set":{"herpleasure":"+10"}}
+inbody_0_0_0:"[*voice*_SOFT]Oohhh, yea baby"{"check":{"time":">=10"}, "set":{"herpleasure":"+2"}}
+inbody_0_1_0:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][*voice*_SOFT]Please give it to me hard, I'm about to cum!"{"set":{"herpleasure":"+1"}
+inbody_0_2_0:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][*voice*_SOFT]Please fuck me hard, I'm so close!"{"set":{"herpleasure":"+1"}
+bodycontactresistive_0_1_0:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][*voice*_SOFT]Give it to me, I'm almost there!"{"set":{"herpleasure":"+1"}
+bodycontactresistive_0_2_0:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][*voice*_SOFT]Please fuck me hard, I'm so close!"{"set":{"herpleasure":"+1"}
+
+inbody_0_0_1:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][*voice*_MEDIUM]OH! Careful baby, it still hurts"{"check":{"time":"<10"}, "set":{"herpleasure":"+2"}}
+inbody_0_0_1:"[*voice*_MEDIUM]yes, YES!"{"check":{"time":">=10"}, "set":{"herpleasure":"+5"}}
+inbody_0_1_1:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][*voice*_MEDIUM]yes, YES! Harder! I'm close! HARDER!"{"set":{"herpleasure":"+5"}}
+inbody_0_2_1:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]oh fuckББББББББББББ, oh fuckББББББББББББ, AH!ББББББББББББ AHHH!ББББББББББББ I'M CUMMIIIINGGGG!!ББББББББББББ[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+inbody_0_0_2:"[vigorous_0_0]"
+inbody_0_1_2:"[vigorous_0_1]"
+inbody_0_2_2:"[vigorous_0_2]"
+bodycontactresistive_0_0_2:"bodycontactresistive_0_0_2???[vigorous_0_0]"
+bodycontactresistive_0_1_2:"bodycontactresistive_0_1_2???[vigorous_0_1]"
+bodycontactresistive_0_2_2:"bodycontactresistive_0_2_2???[vigorous_0_2]"
+
+vigorous_0_0:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][WINCE][*voice*_HARD]holy fuck![*leftarmoverwhelmed*][*rightarmoverwhelmed*]ББББББББББББ[SETVAR_leftarm_*leftarmoverwhelmed*][SETVAR_rightarm_*rightarmoverwhelmed*]"{"set":{"herpleasure":"+10"}}
+vigorous_0_1:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][WINCE][*voice*_HARD]holy fuck![*leftarmoverwhelmed*][*rightarmoverwhelmed*] I'M ABOUT TO CUM!ББББББББББББ[SETVAR_leftarm_*leftarmoverwhelmed*][SETVAR_rightarm_*rightarmoverwhelmed*]"{"set":{"herpleasure":"+10"}}
+vigorous_0_0:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *]I told you to go slow!ББББББББББББ"{"check":{"time":"<10"}}
+vigorous_0_2:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]oh fuckББББББББББББ, oh fuckББББББББББББ, AH!ББББББББББББ AHHH!ББББББББББББ I'M CUMMIIIINGGGG!!ББББББББББББ[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+deepest_yet_orgasm_0:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]oh fuck it's so deepББББББББББББ, oh fuckББББББББББББ, AH!ББББББББББББ AHHH!ББББББББББББ I'M CUMMIIIINGGGG!!ББББББББББББ[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+deepest_yet_orgasm_1:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]oh fuck it's even deeper than beforeББББББББББББ, oh fuckББББББББББББ, AH!ББББББББББББ AHHH!ББББББББББББ I'M CUMMIIIINGGGG!!ББББББББББББ[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+hilt_orgasm:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][ANIMTOOLSDISABLEHUNNIESOUNDS][*voice*_CLIMAX][after_orgasm_*herneworgasms*]You're hitting my deepest parts!БББ oh fuckББББББББББББ, oh fuckББББББББББББ, AH!ББББББББББББ AHHH!ББББББББББББ I'M CUMMIIIINGGGG!!ББББББББББББ[ANIMTOOLSENABLEHUNNIESOUNDS]"{"set":{"herorgasms":"+1", "herneworgasms":"+1", "herpleasure":0}}
+
+vigorous:"[vigorous_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *][SETVAR_time_* time + 1 *]"{"style":"Thought"}
+inbody:"[inbody_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_* mt.vigour \ 34 *][SETVAR_time_* time + 1 *]"{"style":"Thought"}
+bodycontact:"[inbody_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_* mt.vigour \ 34 *][SETVAR_time_* time + 1 *]"{"style":"Thought", "check":{"mt.vigour":">=1"}}
+bodycontactresistive:"[inbody_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_* mt.vigour \ 34 *][SETVAR_time_* time + 1 *]"{"style":"Thought", "check":{"mt.vigour":"<1"}}
+bodyentered:"[bodyentered_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *][SETVAR_time_* time + 1 *]"{"style":"Thought"}
+bodycontactspaceheldpush:"[bodycontactspaceheldpush_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *][SETVAR_time_* time + 1 *]"{"style":"Thought"}
+cuminher:"[cuminher_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *][SETVAR_time_* time + 1 *]"{"style":"Thought"}
+bodycontacthilt:"[hilt_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_* maxdepth < da.him.body.penis.length *][SETVAR_time_* time + 1 *]"{"style":"Thought"}
+bodycontactspaceheldpushinhilt:"[hilt_*hymen*_* ( herpleasure / herpleasuremax > orgasmclose ) + ( herpleasure >= herpleasuremax ) *_* maxdepth < da.him.body.penis.length *][SETVAR_time_* time + 1 *]"{"style":"Thought"}
+
+hilt_0_0_0:"[hilt_again][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_1_0_0:"[destroy_hymen][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_0_0_1:"[deepest_yet_* hilts > 0 *][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_1_0_1:"[destroy_hymen][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+
+hilt_0_1_0:"[hilt_close][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_1_1_0:"[destroy_hymen][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_0_1_1:"[deepest_yet_close_* hilts > 0 *][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_1_1_1:"[destroy_hymen][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+
+hilt_0_2_0:"[hilt_orgasm][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_1_2_0:"[destroy_hymen][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_0_2_1:"[deepest_yet_orgasm_* hilts > 0 *][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+hilt_1_2_1:"[destroy_hymen][SETVAR_maxdepth_da.him.body.penis.length][SETVAR_hilts_* hilts + 1 *]"{"style":"Thought"}
+
+pre_cum:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *]Don't cum yet, or else it'll get even bigger![precum_1_2]ББББББББББББ"{"check":{"hisprecums":0}, "set":{"hisprecums":"+1"}}
+precum_1_2:"I'll try, but your pussy feels so good![precum_1_3][SETVAR_da.pleasurePercentage_0]ББББББББББББ"{"style":"Him"}
+precum_1_3:"I can barely take it as is, if it gets any bigger then we won't be able to break your curseББББББББББББ"
+pre_cum:"It's so hard to hold it in!ББББББББББББ[precum_2_2_* ( herpleasure / herpleasuremax > orgasmclose ) && ( herorgasms >= 1 ) *]"{"style":"Him", "check":{"hisprecums":">0"}, "set":{"hisprecums":"+1"}}
+precum_2_2_0:"Please*, YOU*, you must![SETVAR_da.pleasurePercentage_0]ББББББББББББ"
+precum_2_2_1:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][*voice*_HARD]Don't stop! I'm almost there![SETVAR_da.pleasurePercentage_0]ББББББББББББ"
+
+vigorous_1_0:"[hymen_1]"
+inbody_1_0_0:"[hymen_1]"
+inbody_1_1_0:"[hymen_1]"
+inbody_1_0_1:"[hymen_1]"
+inbody_1_1_1:"[hymen_1]"
+inbody_1_0_2:"[hymen_1]"
+inbody_1_1_2:"[hymen_1]"
+bodycontactresistive_1_0_0:"[hymen_1]"
+bodycontactresistive_1_0_1:"[hymen_1]"
+bodycontactresistive_1_0_2:"[hymen_1]"
+bodycontactresistive_1_1_0:"[hymen_1]"
+bodycontactresistive_1_1_1:"[hymen_1]"
+bodycontactresistive_1_1_2:"[hymen_1]"
+bodycontactresistive_1_2_0:"[hymen_1]"
+bodycontactresistive_1_2_1:"[hymen_1]"
+bodycontactresistive_1_2_2:"[hymen_1]"
+bodyentered_1_0:"[hymen_1]"
+bodycontactspaceheldpush_1_0:"[hymen_1]"
+cuminher_1_0:"[hymen_1]"
+vigorous_1_1:"[hymen_1]"
+vigorous_1_2:"[hymen_1]"
+bodyentered_1_1:"[hymen_1]"
+bodyentered_1_2:"[hymen_1]"
+bodycontactspaceheldpush_1_1:"[hymen_1]"
+bodycontactspaceheldpush_1_2:"[hymen_1]"
+cuminher_1_1:"[hymen_1]"
+cuminher_1_2:"[hymen_1]"
+
+hymen_1:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][*voice*_HARD]Ow!ББББББББББББ [*voice_SOFT]OhhhББББББББББББ fuck that's bigББББББББББББ[hymen_resp][SETVAR_hymen_0]"
+hymen_resp:"Princess, you're bleeding! Are you ok?[hymen_resp2]ББББББББББББ"{"style":"Him"}
+hymen_resp2:"I'll be okББББББББББББ, please go slowББББББББББББ"
+
+destroy_hymen:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][*hiltleftarm*][*hiltrightarm*][*voice*_HARD]OW! You weren't supposed to just cram it in!ББББББББББББ[hymen_resp][SETVAR_hymen_0][*leftarm*][*rightarm*]"
+
+hilt_again:"[*hiltleftarm*][*hiltrightarm*][*voice*_HARD]Oh god that's so deep!ББББББББББББ[*leftarm*][*rightarm*]"
+hilt_close:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][*hiltleftarm*][*hiltrightarm*][*voice*_HARD]It's so deep, I'm gonna cum!ББББББББББББ[*leftarm*][*rightarm*]"
+deepest_yet_0:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][*hiltleftarm*][*hiltrightarm*][*voice*_HARD]OW!* YOU!*[deepest_yet_resp]ББББББББББББ[*leftarm*][*rightarm*]"
+deepest_yet_1:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][*hiltleftarm*][*hiltrightarm*][*voice*_HARD]OW!* YOU!* It's too big now![deepest_yet_resp]ББББББББББББ[*leftarm*][*rightarm*]"
+deepest_yet_resp:"Sorry*, ME*, it feels so good to go all the way inББББББББББББ"{"style":"Him"}
+deepest_yet_close_0:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][*hiltleftarm*][*hiltrightarm*][*voice*_HARD]PUSH IT ALL THE WAY IN AGAIN, I'M ABOUT TO CUM!ББББББББББББ[*leftarm*][*rightarm*]"
+deepest_yet_close_1:"[SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0][*hiltleftarm*][*hiltrightarm*][*voice*_HARD]IT'S SO MUCH BIGGER NOW! PUSH IT ALL THE WAY IN AGAIN, I'M ABOUT TO CUM!ББББББББББББ[*leftarm*][*rightarm*]"

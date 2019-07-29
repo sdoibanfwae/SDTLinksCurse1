@@ -1,0 +1,22 @@
+﻿all:"CLEAR"
+
+initial_settings:{"timepos":0, "herneworgasms":0, "herpleasure":0, "orgasmclose":0.8, "herpleasuremax":40, "hiltleftarm:"LEFT_ARM_HIS_LEGS", hiltrightarm:"RIGHT_ARM_LEGS", leftarm:"LEFT_ARM_LEGS", rightarm:"RIGHT_ARM_LEGS", "leftarmoverwhelmed":"TAP_HANDS", "rightarmoverwhelmed":"WINCE"}
+
+start:"[SETVAR_da.dialogue.import_sex3.txt][CUM_BLOCK_ON][SHOW_PENIS][SHOW_BALLS][OPEN_MOUTH](*YOU* has such amazing stamina! I guess I shouldn't expect any less from the hero of Hyrule)ББББББББББББ[SETVAR_da.hair.load_hairdown.png]"{"style":"Thought","set":{"da.charcode.load":"XcustomHair:Mods/zelda botw/hairdown.png;top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+
+after_orgasm_0:"after new orgasm 0?"{"set":{"herpleasure":0, "herpleasuremax":30}}
+after_orgasm_1:"[next]"{"set":{"herpleasure":0, "herpleasuremax":30}}
+after_orgasm_2:"[next]"{"set":{"herpleasure":0, "herpleasuremax":100}}
+after_orgasm_3:"[next]"{"set":{"herpleasure":0, "herpleasuremax":100, "herneworgasms":2}}
+
+deep_deepest0_longstroke0_hilt1:"(Wow Rosalina was right, it feels even deeper in this position!)"{"style":"thought"}
+deep_deepest0_longstroke1_hilt1:"(Wow Rosalina was right, it feels even deeper in this position!)"{"style":"thought"}
+
+deep_deepest1_longstroke0_hilt0:"(Wow Rosalina was right, it feels even deeper in this position!)"{"style":"thought"}
+deep_deepest1_longstroke1_hilt0:"(Wow Rosalina was right, it feels even deeper in this position!)"{"style":"thought"}
+deep_deepest1_longstroke0_hilt1:"(Wow Rosalina was right, it feels even deeper in this position!)"{"style":"thought"}
+deep_deepest1_longstroke1_hilt1:"(Wow Rosalina was right, it feels even deeper in this position!)"{"style":"thought"}
+
+next:"[next2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_08_linkcum2]"{"style":"Thought", "set":{"da.charcode.load":"top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+-next2:"[next3]"{"style":"Thought", "set":{"da.charcode.load":"top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"08_linkcum2.txt"}}

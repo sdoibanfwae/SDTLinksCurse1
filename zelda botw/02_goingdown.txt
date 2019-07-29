@@ -1,0 +1,15 @@
+﻿all:"CLEAR"
+
+start:"[CLEAN_ALL][LOOK_DOWN][OPEN_MOUTH]I think I can fix that...[s2]ББББББББББББ"
+s2:"How?[s3][LOOK_UP]ББББББББББББ"{"style":"Him"}
+s3:"Let me take a look[LOOK_DOWN]...[next]ББББББББББББ"
+
+next:"[ANIMTOOLS_zelda_slash5C_03_bj][next2]"{"style":"Thought"}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"03_bj.txt"}}
+
+-vigorous:"[WINCE_2000][KYANNA_HARD]oh fuck[KYANNA_HARD] you're fucking me [KYANNA_HARD] so good[KYANNA_HARD] *atv_curresist*, *atv_curresist2*"
+-vigorous:"OH MY GOD!"
+-bodycontacthilt:"hilt again!"
+-cuminher:"cuminher [GROW_HIS_PENIS_BY_30] holy shit it's getting even bigger!"
+-precum:"[GROW_HIS_PENIS_100] holy shit it's getting even bigger!"
+-finish:"finish [GROW_HIS_PENIS_BY_30] holy shit it's getting even bigger!"

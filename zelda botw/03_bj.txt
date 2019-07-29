@@ -1,0 +1,97 @@
+﻿all:"CLEAR"
+
+initial_settings:{ "timepos":0, "throats":0, "dts":0, "carried_away":0, "pre_cums":0 }
+
+start:"[CLEAN_ALL][CUM_BLOCK_ON][SETVAR_da.charcode.load_breastfirmness:Manual,0.3;throatResist:100;][showbad]"
+showbad:"[OPEN_MOUTH]Let's see how 'bad' this curse is...[SHOW_PENIS][SHOW_BALLS][sshock]ББББББББББББ"
+sshock:"[SHOCK][*voice*_SOFT]Oh my![HAPPY_MOOD][sbig]ББББББББББББ"
+sbig:"Yes! This curse is quite big, and fat![sbutcursed]ББББББББББББ"
+sbutcursed:"[slift](It's pretty big, but I don't know about 'cursed')ББББББББББББ"{"style":"Thought"}
+slift:"Can you lift the curse?[sprincess]ББББББББББББ"{"style":"Him"}
+sprincess:"[sandthen]All you need to do is find a beautiful virgin princessББББББББББББ"
+sandthen:"[soh]OkББББББББББББББББББББББББ, and then what?ББББББББББББ"{"style":"Him"}
+soh:"[sorgasm]OH FUCK! ББББББББББББ.ББББББББББББ.ББББББББББББ.ББББББББББББ"{"style":"Him"}
+sorgasm:"[sorgasm]and give her an orgasm[sthatall]ББББББББББББ"
+sthatall:"[s3times]oh! ББББББББББББ.ББББББББББББ.ББББББББББББ.ББББББББББББ Is that all? ББББББББББББ.ББББББББББББ.ББББББББББББ.ББББББББББББ"{"style":"Him"}
+s3times:"[s3times]uuhh...ББББББББББББ3 times...ББББББББББББ every day, or else the curse will come back![scando]ББББББББББББ"
+scando:"[sluckily]WellББББББББББББ.ББББББББББББ.ББББББББББББ.ББББББББББББ I, ББББББББББББohhh godББББББББББББ, I think I can do thatББББББББББББ.ББББББББББББ.ББББББББББББ.ББББББББББББ"{"style":"Him"}
+sluckily:"[sluckily]Luckily, I've got a tight virgin pussy just for you![sthankyou]ББББББББББББББББББББББББ"
+sthankyou:"[sbutfirst]Thank you*, ME*, I need to, ahhh, get rid of this curse! ББББББББББББ.ББББББББББББ.ББББББББББББ.ББББББББББББ"{"style":"Him"}
+sbutfirst:"[sbutfirst]But first, let's warm up a bit more[OPEN_MOUTH][RIGHT_ARM_LEGS][s_end_INSTANT]ББББББББББББ"
+s_end_INSTANT:""{"style":"Thought"}
+
+first_throat:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 10 *][RESET_RESIST]*ME, *that feels amazing!ББББББББББББ"{"style":"Him", "held":"false", "set":{"throats":"+1", "da.charcode.load":"throatResist:100;"}}
+first_throat:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 10 *][RESET_RESIST]Oh fuckББББББББББББ"{"style":"Him", "held":"false", "set":{"throats":"+1", "da.charcode.load":"throatResist:100;"}}
+
+first_throat:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 10 *][RESET_RESIST][HOLD]It's so good!ББББББББББББ"{"style":"Him", "held":"false", "check":{"throats":">=3"}, "set":{"da.charcode.load":"throatResist:50;"}}
+
+resistance:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 1 *](Maybe I should've practiced this)ББББББББББББ"{"style":"Thought"}
+resistance:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 1 *](This thing is going in my pussy next...)ББББББББББББ"{"style":"Thought"}
+resistance:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 1 *](I hope *YOU* likes it)ББББББББББББ"{"style":"Thought"}
+resistance:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 1 *]"{"style":"Thought"}
+-resistance:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 1 *]"{"style":"Thought"}
+first_dt:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 10 *][RESET_RESIST]Oh god![HOLD]ББББББББББББ"{"style":"Him", "held":"false", "set":{"dts":"+1", "da.charcode.load":"throatResist:50;"}}
+first_dt:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 10 *]Oh god![HOLD]ББББББББББББ"{"style":"Him", "set":{"dts":"+1"}}
+
+vigorous:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 5 *](If I keep this up, I should be able to make him cum soon)ББББББББББББ"{"style":"Thought", "held":"false", "check":{"da.pleasurePercentage":">50"} }
+vigorous:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 5 *](I wonder how fast I can make him cum)ББББББББББББ"{"style":"Thought", "held":"false"}
+vigorous:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 5 *](At this rate, I hope he cums soon)ББББББББББББ"{"style":"Thought", "held":"true", "check":{"da.pleasurePercentage":">50"} }
+vigorous:"[SETVAR_da.pleasurePercentage_* da.pleasurePercentage + 5 *][carried_away]"{"style":"Thought", "held":"true"}
+
+-pre_cum:"oh god that feels good!ББББББББББББ"{"style":"Him", "held":"true", "check":{"dts":">0"}}
+pre_cum:"oh shit![next]ББББББББББББ[AUTO_OFF]"{"style":"Him", "held":"true", "check":{"dts":">0"}}
+pre_cum:"[deeper_please]Oh shit! See if you can take it deeper!ББББББББББББ"{"style":"Him", "held":"false", "check":{"dts":0, "pre_cums":0}, "set":{"pre_cums":"+1"}}
+pre_cum:"[deeper]Fuck, I'm gonna push it deeper!ББББББББББББ[AUTO_HARD]"{"style":"Him", "held":"true", "check":{"dts":0, "pre_cums":0}, "set":{"pre_cums":"+1"}}
+pre_cum:"[force_hilt][HOLD][DEEPTHROAT]Sorry*, ME*, I need to see what it feels like to push it all the way in!ББББББББББББ"{"style":"Him", "held":"false", "check":{"dts":0, "pre_cums":">=1"}, "set":{"pre_cums":"+1"}}
+pre_cum:"[force_hilt][DEEPTHROAT]Sorry*, ME*, I need to see what it feels like to push it all the way in!ББББББББББББ"{"style":"Him", "held":"true", "check":{"dts":0, "pre_cums":">=1"}, "set":{"pre_cums":"+1"}}
+deeper_please:"I'll try, but it's so bigББББББББББББ"{"check":{"carried_away":0}}
+deeper_please:"I can't, it's too big!ББББББББББББ"{"check":{"carried_away":">0"}}
+deeper:"Not too deep pleaseББББББББББББ"{"check":{"carried_away":0}}
+deeper:"*YOU, *please no! I can't take it!ББББББББББББ"{"check":{"carried_away":">0"}}
+force_hilt:"[force_hilt2]But there's no way I can take it all the way!ББББББББББББ"
+force_hilt2:"[AUTO_HARD]We'll see about thatББББББББББББ"{"style":"Him"}
+
+carried_away:"[ANGRY_MOOD][ARMS_HIS_LEGS][ca]"{"style":"Thought", "set":{"carried_away":"+1"}}
+ca:"(He's getting carried away!)[ca_stop]ББББББББББББ"{"style":"Thought"}
+-ca:"[ca_stop]"{"style":"Thought"}
+ca_stop:"*YOU, *that's too rough for me![ca_sorry]ББББББББББББ"
+ca_stop:"You're tearing up my throat![ca_sorry]ББББББББББББ"
+ca_stop:"You're pushing it too deep![ca_sorry]ББББББББББББ"
+ca_stop:"It's too big![ca_sorry]ББББББББББББ"
+ca_sorry:"I'm sorry*, ME*, it feels so good I can't help it!ББББББББББББ"{"style":"Him"}
+ca_sorry:"Sorry*, ME*, my body is moving on its own!ББББББББББББ"{"style":"Him"}
+
+pull_off:"[ca_stop]"{"check":{"carried_away":1}}
+pull_off:"Is it good*, YOU*?"{"check":{"carried_away":0}}
+pull_off:"Do you like it*, YOU*?"{"check":{"carried_away":0}}
+pull_off:"Keep going, I'm getting close"{"style":"Him", "check":{"carried_away":0, "da.pleasurePercentage":">70"}}
+general:"Are you going to slow down now?ББББББББББББ"{"check":{"carried_away":">0"}}
+
+next:"[ANIMTOOLS_zelda_slash5C_04_linkcum1][RELEASE][next2]"{"style":"Thought"}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"04_linkcum1.txt"}}
+
+interrupt:"-GUK!"
+interrupt:"-guh!"
+interrupt:"-kuh!"
+interrupt:"-ngh!"
+interrupt:"-mphh!"
+interrupt:"-mph!"
+interrupt:"-obu!"
+interrupt:"-nya!"
+interrupt:"-ngyha!"
+interrupt:"-ghmph!"
+interrupt:"-mmbh!"
+interrupt:"-nyan!"
+interrupt:"-mmn!"
+interrupt:"-ghch!"
+interrupt:"-mmb!"
+interrupt:"-mmbh!"
+interrupt:"-mnh!"
+interrupt:"-ng!"
+interrupt:"-!"
+interrupt:"-hn!"
+cough:"-aghck"
+cough:"-ack"
+cough:"-ackph"
+cough:"-agph"
+cough:"-achf"

@@ -1,0 +1,42 @@
+﻿all:"CLEAR"
+
+initial_settings:{ "gonnacum":0 }
+
+start:"[CUM_BLOCK_ON][SHOW_PENIS][SHOW_BALLS]It feels too good*, ME*[s1]ББББББББББББ"{"style":"Him"}
+s1:"I'm gonna cum![s2]ББББББББББББ"{"style":"Him"}
+s2:"[s3](He's finally gonna cum!)ББББББББББББ"{"style":"Thought"}
+s3:"[OPEN_MOUTH][LEFT_ARM_HAND_JOB][RIGHT_ARM_LEGS][s4][*voice*_SOFT][HAPPY_MOOD]Cum on my face*, YOU*!ББББББББББББ"
+s4:"[s5]Or would you rather cum on my tits?ББББББББББББ"
+s5:"[s6]"{"style":"Thought", "set":{"da.charcode.load":"top:none;tops:pusheddown,220,220,220,0.902,255,255,255,0.902;armwear:none;"}}
+s6:"[CLOSE_MOUTH]"{"style":"Thought", "set":{"gonnacum":1}}
+
+vigorous:"vigorous"
+
+-pre_cum2:"[pre_cum3](*YOU*'s stamina is impressive for his first time)ББББББББББББ"{"style":"Thought"}
+-pre_cum3:"(I guess I shouldn't expect any less from the hero of Hyrule)ББББББББББББ"{"style":"Thought"}
+
+pre_cum2:"[WORRIED_MOOD](he's gonna fuck the shit out of me, isn't he?)ББББББББББББ"{"style":"Thought"}
+pre_cum2:"[HAPPY_MOOD](he already abused my throat, I can't wait for him to destroy my pussy)ББББББББББББ"{"style":"Thought"}
+pre_cum2:"[WORRIED_MOOD](with the way he treated my throat, my pussy might get more than I bargained for)ББББББББББББ"{"style":"Thought"}
+
+pre_cum:"[pre_cum2]OohhББББББББББББ"{"style":"Him", "set":{"gonnacum":"+1"}}
+pre_cum:"[pre_cum2]AaahhhББББББББББББ"{"style":"Him", "set":{"gonnacum":"+1"}}
+pre_cum:"[SETVAR_da.pleasurePercentage_0][EJACULATE][fin]"{"style":"Him", "check":{"gonnacum":">=4"}}
+
+-cum_on_face:"[fin]"{"style":"Him"}
+-cum_in_eye:"[fin]"{"style":"Him"}
+-cum_in_mouth:"[fin]"{"style":"Him"}
+-cum_in_throat:"[fin]"{"style":"Him"}
+-cum_in_nose:"[fin]"{"style":"Him"}
+-finish:"[fin]"{"style":"Him"}
+
+fin:"[HAPPY_MOOD][f1]OOoohhhhhББББББББББББ, that was amazing*, ME*ББББББББББББ[GROW_HIS_PENIS_BY_10]"{"style":"Him"}
+f1:"[f2][SWALLOW]Wait, what?ББББББББББББ[OPEN_MOUTH]"{"style":"Thought"}
+f2:"[f3][SHOCK][WORRIED_MOOD]Holy shit!ББББББББББББ It's getting even bigger![EJACULATE]ББББББББББББ[GROW_HIS_PENIS_BY_10]"{"style":"Thought"}
+f3:"[f4]Oh no, I need to give you those 3 orgasms!ББББББББББББ"{"style":"Him"}
+f4:"[f5](I don't know if I'll be able to handle this thing!)ББББББББББББ"{"style":"Thought"}
+f5:"[next][AGGRESSIVE_MOOD](I need to fuck him before it gets too big for me!)ББББББББББББ"{"style":"Thought"}
+
+next:"[next2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_05_missionary]"{"style":"Thought", "set":{"da.charcode.load":"top:none;legwear:none;tops:none;bottoms:none;breasts:52;breastfirmness:Manual,0.01000;hisBottoms:none,0,0,0,1;"}}
+-next2:"[next3]"{"style":"Thought", "set":{"da.charcode.load":"top:none;legwear:none;tops:none;bottoms:none;breasts:52;breastfirmness:Manual,0.01000;"}}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"05_missionary.txt"}}

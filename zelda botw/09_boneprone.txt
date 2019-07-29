@@ -1,0 +1,71 @@
+﻿all:"CLEAR"
+
+initial_settings:{"timepos":0, "herneworgasms":0, "herpleasure":0, "orgasmclose":0.8, "herpleasuremax":20, "hiltleftarm":"ADD_TEARS", "hiltrightarm":"WINCE_500", "leftarm":"LEFT_ARM_LEGS", "rightarm":"RIGHT_ARM_LEGS", "leftarmoverwhelmed":"ADD_TEARS", "rightarmoverwhelmed":"SHOCK_500_100"}
+
+start:"[SETVAR_da.dialogue.import_sex4.txt][CUM_BLOCK_ON][SHOW_PENIS][SHOW_BALLS][OPEN_MOUTH][SETVAR_da.breathPercentage_0][SETVAR_da.oxygenPercentage_0]Wait*, YOU*БББББ, that thing is way too big for me![ADD_TEARS]ББББББББББББ[SETVAR_da.hair.load_hairdown.png]"{"set":{"da.charcode.load":"XcustomHair:Mods/zelda botw/hairdown.png;top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+
+-vigorous_0_0:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][WINCE][ADD_TEARS][*voice*_HARD]*YOU, *please stop!ББББББББББББ It's too much!ББББББББББББ"{"check":{"herneworgasms":0}, "set":{"herpleasure":"+10"}}
+-vigorous_0_1:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][WINCE][*voice*_HARD]OH GOD!ББББББББББББ[close_first]"{"check":{"herneworgasms":0}, "set":{"herpleasure":"+10"}}
+-close_first:"(Even though it hurts, I'm about to cum so hard!)"{"style":"Thought"}
+-vigorous_0_0:"[SETVAR_da.breathPercentage_* da.breathPercentage - 20 *][WINCE][*voice*_HARD]Oh shit!ББББ It hurts but it feels so good!ББББББББББББ"{"check":{"herneworgasms":">0"}, "set":{"herpleasure":"+10"}}
+-vigorous_0_1:"[SETVAR_da.breathPercentage_* da.breathPercentage - 30 *][WINCE][*voice*_HARD]FUCK!БББ KEEP DESTROYING MY PUSSY!ББББББББББББ"{"check":{"herneworgasms":">0"}, "set":{"herpleasure":"+10"}}
+
+-cuminher:"[cuminher_* herpleasure >= herpleasuremax *][SETVAR_time_* time + 1 *]"
+-cuminher_0:"[XGROW_HIS_PENIS_30]Oh no you came again! OW FUCK! OW! OW! atv_inbody == *atv_inbody*"
+-cuminher_1:"[XGROW_HIS_PENIS_30]Oh fuck it's growing again! It feels so good stretching me out![vigorous_0_1] atv_inbody == *atv_inbody*"
+
+after_orgasm_0:"after new orgasm 0?"{"set":{"herpleasure":0, "herpleasuremax":20}}
+after_orgasm_1:"(Why did I cum even though it hurts so much?)ББББББББББББ"{"style":"Thought", "set":{"herpleasure":0, "herpleasuremax":20}}
+after_orgasm_2:"[SETVAR_herprecum_1]"{"style":"Thought", "set":{"herpleasure":0, "herpleasuremax":20}}
+after_orgasm_3:"[next]"{"style":"Thought", "set":{"herpleasure":0, "herpleasuremax":20, "herneworgasms":2}}
+
+next:"[next2][CLEAN_CUM][ANIMTOOLS_zelda_slash5C_10_linkcum3]"{"style":"Thought", "set":{"da.charcode.load":"top:none;legwear:none;tops:none;bottoms:none;breasts:79;breastfirmness:Manual,0.30000;"}}
+next2:""{"style":"Thought", "set":{"da.dialogue.load":"10_linkcum3.txt"}}
+
+
+herprecum_1:"[herprecum_2]Don't stop! Don't stop! I'm so close! ББББББББББББ"
+herprecum_2:"[SETVAR_herprecum_0][SETVAR_da.pleasurePercentage_99][next]Oh my god, *ME*, I can't hold it anymore! I'm gonna cum! ББББББББББББ"{"style":"him"}
+
+
+----precumming lines
+soft_cum_precum1:"[herprecum_1]"{"style":"thought"}
+
+hard_cum_streak0_deepest0_longstroke0_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak0_deepest0_longstroke1_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak0_deepest1_longstroke0_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak0_deepest1_longstroke1_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+
+hard_cum_streak0_deepest0_longstroke0_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak0_deepest0_longstroke1_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak0_deepest1_longstroke0_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak0_deepest1_longstroke1_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+
+hard_cum_streak1_deepest0_longstroke0_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak1_deepest0_longstroke1_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak1_deepest1_longstroke0_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak1_deepest1_longstroke1_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+
+hard_cum_streak1_deepest0_longstroke0_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak1_deepest0_longstroke1_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak1_deepest1_longstroke0_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak1_deepest1_longstroke1_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+
+hard_cum_streak2_deepest0_longstroke0_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak2_deepest0_longstroke1_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak2_deepest1_longstroke0_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak2_deepest1_longstroke1_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+
+hard_cum_streak2_deepest0_longstroke0_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak2_deepest0_longstroke1_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak2_deepest1_longstroke0_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+hard_cum_streak2_deepest1_longstroke1_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+
+deep_cum_deepest0_longstroke0_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+deep_cum_deepest0_longstroke1_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+deep_cum_deepest1_longstroke0_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+deep_cum_deepest1_longstroke1_hilt0_precum1:"[herprecum_1]"{"style":"thought"}
+
+deep_cum_deepest0_longstroke0_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+deep_cum_deepest0_longstroke1_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+deep_cum_deepest1_longstroke0_hilt1_precum1:"[herprecum_1]"{"style":"thought"}
+deep_cum_deepest1_longstroke1_hilt1_precum1:"[herprecum_1]"{"style":"thought"}

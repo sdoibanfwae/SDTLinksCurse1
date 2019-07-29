@@ -1,0 +1,8 @@
+﻿all:"CLEAR"
+initial_settings:{"herpleasure":0,"herorgasms":0,"hisorgasms":0,"awesomeorgasms":0,"lastpos":10,"vigourstreak":0,"x":"*","pussytight":1,"pussywettimes":0,"timeshilted":0,"totalherpleasure":0,"totalvigourstreak":0,"messages":0,"lasttimehilted":0,"lasttimevigourous":0,"lasttimecum":0,"lasttimeherorgasm":0,"lasttimedeepest":0,"lowestresistance":20,"deep":0.6, "olddeepest":0, "lastprecum":0, "dialogtime":20, "lastdialog":0, "herprecum":0 }
+
+-undress:"[SETVAR_da.charcode.load_top:none;legwear:none;tops:none;bottoms:none;]"
+
+start:"[SETVAR_da.background.load_bg5.png][CLEAN_ALL][HIDE_PENIS][HIDE_BALLS][NORMAL_MOOD][CLOSE_MOUTH][LOADGLOBALS_da][ANIMTOOLSSETVOICECHAR4][SETVAR_voice_KYANNA][SETVAR_da.charcode.load_breastfirmness:Manual,1.0;][SETVAR_starttime_*dt_time*][s2]"{"style":"Thought"}
+s2:"[CLEAN_ALL][CUM_BLOCK_ON][ANIMTOOLS_zelda_slash5C_01_start]ready... 1... 2... 3...[next]"{"style":"Thought"}
+next:"[CLEAN_ALL]..."{"style":"Thought", "set":{"da.dialogue.load":"01_start.txt"}}
